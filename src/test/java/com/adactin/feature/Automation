@@ -1,0 +1,15 @@
+Feature: Purchasing in Automation Practice Application
+@smoke
+Scenario: User Signin in Automation Practice
+Given User Launch the Automaation Application
+When Enter the username in the Email Field
+And Enter the password in the password Field
+Then Click the Login Button and it will navigate to Automation app
+@Sanity
+Scenario: Purchasing the tshirt
+When Click the Tshirt Option
+And User Select the Faded Short Sleve
+And User go to the add cart
+And User click the Proceed
+And User Click the Proceed to Check to out
+Then User Click Purchased
